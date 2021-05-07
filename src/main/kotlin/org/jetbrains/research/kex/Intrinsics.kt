@@ -4,6 +4,12 @@ package org.jetbrains.research.kex
 
 object Intrinsics {
     /**
+     * Assumes that all the conditions are true without checking them
+     * */
+    @JvmStatic
+    fun kexAssume(vararg conditions: Boolean) {}
+
+    /**
      * Checks if the call cite is reachable with all the conditions being true
      * */
     @JvmStatic
