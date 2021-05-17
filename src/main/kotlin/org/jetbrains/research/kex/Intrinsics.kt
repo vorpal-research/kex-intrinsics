@@ -10,6 +10,14 @@ object Intrinsics {
     fun kexAssume(vararg conditions: Boolean) {}
 
     /**
+     * Assumes that the given object @param is not null
+     * */
+    @JvmStatic
+    fun <T> kexNotNull(value: T?): T {
+        return value ?: throw Throwable()
+    }
+
+    /**
      * Checks if the call cite is reachable with all the conditions being true
      * */
     @JvmStatic
