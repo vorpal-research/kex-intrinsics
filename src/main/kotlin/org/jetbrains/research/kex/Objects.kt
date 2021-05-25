@@ -63,7 +63,7 @@ object Objects {
      * Allows to create a double of unknown value
      */
     @JvmStatic
-    fun kexUnknownDouble(): Float {
+    fun kexUnknownDouble(): Double {
         throw UnknownTypeInstantiation()
     }
 
@@ -136,7 +136,7 @@ object Objects {
      * Allows to create a double array of unknown value
      */
     @JvmStatic
-    fun kexUnknownDoubleArray(): FloatArray {
+    fun kexUnknownDoubleArray(): DoubleArray {
         throw UnknownTypeInstantiation()
     }
 
