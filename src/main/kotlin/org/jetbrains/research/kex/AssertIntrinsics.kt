@@ -2,8 +2,7 @@
 
 package org.jetbrains.research.kex
 
-object Intrinsics {
-    const val INTRINSICS_VERSION = "0.0.4"
+object AssertIntrinsics {
     /**
      * Assumes that all the conditions are true without checking them
      * */

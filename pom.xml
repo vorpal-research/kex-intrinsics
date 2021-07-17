@@ -5,7 +5,7 @@
 
     <groupId>org.jetbrains.research</groupId>
     <artifactId>kex-intrinsics</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.5</version>
     <packaging>jar</packaging>
 
     <name>org.jetbrains.research kex-intrinsics</name>
@@ -76,6 +76,14 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>

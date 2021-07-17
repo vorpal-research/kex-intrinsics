@@ -2,7 +2,7 @@ package org.jetbrains.research.kex
 
 class UnknownTypeInstantiation() : Throwable()
 
-object Objects {
+object UnknownIntrinsics {
     /**
      * Allows to create a boolean of unknown value
      */
