@@ -14,7 +14,7 @@ object AssertIntrinsics {
      * */
     @JvmStatic
     fun <T> kexNotNull(value: T?): T {
-        return value ?: throw Throwable()
+        return value ?: throw NullPointerException()
     }
 
     /**
