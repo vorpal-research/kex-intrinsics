@@ -13,21 +13,6 @@ object CollectionIntrinsics {
     @JvmStatic
     fun forEach(start: Int, end: Int, body: IntConsumer) {}
 
-    @JvmStatic
-    fun firstOfEach(start: Int, end: Int, body: IntBoolean2BooleanFunction): Boolean {
-        throw IntrinsicInvocationException()
-    }
-
-    @JvmStatic
-    fun anyOfEach(start: Int, end: Int, body: Int2BooleanFunction): Boolean {
-        throw IntrinsicInvocationException()
-    }
-
-    @JvmStatic
-    fun allOfEach(start: Int, end: Int, body: Int2BooleanFunction): Boolean {
-        throw IntrinsicInvocationException()
-    }
-
     /**
      * for each, body takes current index
      * @start -- starting index, inclusive
