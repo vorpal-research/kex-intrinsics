@@ -32,9 +32,4 @@ object CollectionIntrinsics {
     fun contains(src: Array<Any>, element: Any): Boolean {
         return element in src
     }
-
-    @JvmStatic
-    fun contains(src: Collection<Any>, element: Any): Boolean {
-        return element in src
-    }
 }
