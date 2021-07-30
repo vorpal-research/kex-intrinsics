@@ -9,7 +9,11 @@ object CollectionIntrinsics {
      * @end -- ending index, exclusive
      */
     @JvmStatic
-    fun forEach(start: Int, end: Int, body: IntConsumer) {}
+    fun forEach(start: Int, end: Int, body: IntConsumer) {
+        for (i in start until end) {
+            body.apply(i)
+        }
+    }
 
     /**
      * for each, body takes current index
@@ -17,18 +21,20 @@ object CollectionIntrinsics {
      * @end -- ending index, exclusive
      */
     @JvmStatic
-    fun arrayCopy(src: Any, scrStart: Int, dest: Any, descStart: Int, length: Int) {}
+    fun arrayCopy(src: Any, scrStart: Int, dest: Any, destStart: Int, length: Int) {
+        System.arraycopy(src, scrStart, dest, destStart, length)
+    }
 
     /**
      * contains
      */
     @JvmStatic
     fun contains(src: Array<Any>, element: Any): Boolean {
-        throw IntrinsicInvocationException()
+        return element in src
     }
 
     @JvmStatic
     fun contains(src: Collection<Any>, element: Any): Boolean {
-        throw IntrinsicInvocationException()
+        return element in src
     }
 }
