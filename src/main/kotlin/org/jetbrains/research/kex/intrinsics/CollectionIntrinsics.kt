@@ -29,6 +29,54 @@ object CollectionIntrinsics {
      * contains
      */
     @JvmStatic
+    fun containsBool(src: BooleanArray, element: Boolean): Boolean {
+        return element in src
+    }
+
+    @JvmStatic
+    fun containsByte(src: ByteArray, element: Byte): Boolean {
+        return element in src
+    }
+
+    @JvmStatic
+    fun containsChar(src: CharArray, element: Char): Boolean {
+        return element in src
+    }
+
+    @JvmStatic
+    fun containsShort(src: ShortArray, element: Short): Boolean {
+        return element in src
+    }
+
+    @JvmStatic
+    fun containsInt(src: IntArray, element: Int): Boolean {
+        return element in src
+    }
+
+    @JvmStatic
+    fun containsLong(src: LongArray, element: Long): Boolean {
+        return element in src
+    }
+
+    @JvmStatic
+    fun containsFloat(src: FloatArray, element: Float): Boolean {
+        return element in src
+    }
+
+    @JvmStatic
+    fun containsDouble(src: DoubleArray, element: Double): Boolean {
+        return element in src
+    }
+
+    @JvmStatic
+    fun containsRef(src: Array<Any>, element: Any): Boolean {
+        for (elem in src) {
+            if (elem === element) return true
+        }
+        return false
+    }
+
+    @JvmStatic
     fun contains(src: Array<Any>, element: Any): Boolean {
         return element in src
     }
