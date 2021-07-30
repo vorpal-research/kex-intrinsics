@@ -1,7 +1,7 @@
 package org.jetbrains.research.kex
 
-import org.jetbrains.research.kex.AssertIntrinsics.kexAssert
-import org.jetbrains.research.kex.AssertIntrinsics.kexUnreachable
+import org.jetbrains.research.kex.intrinsics.AssertIntrinsics.kexAssert
+import org.jetbrains.research.kex.intrinsics.AssertIntrinsics.kexUnreachable
 import org.junit.Test
 
 class AssertIntrinsicsTest {

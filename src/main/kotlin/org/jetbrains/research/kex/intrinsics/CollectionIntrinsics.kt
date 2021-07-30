@@ -1,8 +1,6 @@
-package org.jetbrains.research.kex
+package org.jetbrains.research.kex.intrinsics
 
-import org.jetbrains.research.kex.internal.IntConsumer
-import org.jetbrains.research.kex.internal.Int2BooleanFunction
-import org.jetbrains.research.kex.internal.IntBoolean2BooleanFunction
+import org.jetbrains.research.kex.intrinsics.internal.IntConsumer
 
 object CollectionIntrinsics {
     /**

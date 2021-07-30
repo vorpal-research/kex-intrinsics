@@ -1,4 +1,4 @@
-package org.jetbrains.research.kex.internal;
+package org.jetbrains.research.kex.intrinsics.internal;
 
 @FunctionalInterface
 public interface IntConsumer {
