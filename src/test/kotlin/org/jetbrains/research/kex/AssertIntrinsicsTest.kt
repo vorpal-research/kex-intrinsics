@@ -1,10 +1,10 @@
 package org.jetbrains.research.kex
 
-import org.jetbrains.research.kex.Intrinsics.kexAssert
-import org.jetbrains.research.kex.Intrinsics.kexUnreachable
+import org.jetbrains.research.kex.intrinsics.AssertIntrinsics.kexAssert
+import org.jetbrains.research.kex.intrinsics.AssertIntrinsics.kexUnreachable
 import org.junit.Test
 
-class IntrinsicsTest {
+class AssertIntrinsicsTest {
     @Test
     fun testKexAssert() {
         kexAssert(true)

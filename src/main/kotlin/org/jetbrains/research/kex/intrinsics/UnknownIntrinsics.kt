@@ -1,8 +1,8 @@
-package org.jetbrains.research.kex
+package org.jetbrains.research.kex.intrinsics
 
 class UnknownTypeInstantiation() : Throwable()
 
-object Objects {
+object UnknownIntrinsics {
     /**
      * Allows to create a boolean of unknown value
      */

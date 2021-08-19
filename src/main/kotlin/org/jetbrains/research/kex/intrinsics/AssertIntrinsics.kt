@@ -1,9 +1,8 @@
 @file:Suppress("NOTHING_TO_INLINE", "UNUSED_PARAMETER")
 
-package org.jetbrains.research.kex
+package org.jetbrains.research.kex.intrinsics
 
-object Intrinsics {
-    const val INTRINSICS_VERSION = "0.0.4"
+object AssertIntrinsics {
     /**
      * Assumes that all the conditions are true without checking them
      * */
@@ -15,7 +14,7 @@ object Intrinsics {
      * */
     @JvmStatic
     fun <T> kexNotNull(value: T?): T {
-        return value ?: throw Throwable()
+        return value ?: throw NullPointerException()
     }
 
     /**
