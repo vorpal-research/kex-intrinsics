@@ -147,7 +147,7 @@ object CollectionIntrinsics {
     }
 
     @JvmStatic
-    fun containsRef(src: Array<Any>, element: Any): Boolean {
+    fun containsRef(src: Array<Any>, element: Any?): Boolean {
         for (elem in src) {
             if (elem === element) return true
         }
@@ -155,7 +155,7 @@ object CollectionIntrinsics {
     }
 
     @JvmStatic
-    fun contains(src: Array<Any>, element: Any): Boolean {
+    fun contains(src: Array<Any>, element: Any?): Boolean {
         return element in src
     }
 }
