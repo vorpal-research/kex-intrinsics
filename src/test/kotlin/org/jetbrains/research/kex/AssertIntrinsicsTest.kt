@@ -14,6 +14,6 @@ class AssertIntrinsicsTest {
     @Test
     fun testKexUnreachable() {
         kexUnreachable()
-        kexUnreachable("testUnreachable")
+        kexUnreachable("testUnreachable", true)
     }
 }

@@ -4,7 +4,7 @@ package org.jetbrains.research.kex.intrinsics
 
 object AssertIntrinsics {
     /**
-     * Assumes that all the conditions are true without checking them
+     * Assumes that the condition is true without checking them
      * */
     @JvmStatic
     fun kexAssume(condition: Boolean) {}
@@ -18,26 +18,33 @@ object AssertIntrinsics {
     }
 
     /**
-     * Checks if the call cite is reachable with all the conditions being true
+     * Checks if the call cite is reachable with the condition being true
      * */
     @JvmStatic
     fun kexAssert(condition: Boolean) {}
 
     /**
-     * Checks if the call cite is reachable with all the conditions being true
+     * Checks if the call cite is reachable with the condition being true
      * @id -- string identifier to track the results of checking
      * */
     @JvmStatic
     inline fun kexAssert(id: String, condition: Boolean) {}
 
+
     /**
-     * Checks if the call cite is unreachable with all the conditions being true
+     * Checks if the call cite is unreachable
+     */
+    @JvmStatic
+    inline fun kexUnreachable() {}
+
+    /**
+     * Checks if the call cite is unreachable with the condition being true
      */
     @JvmStatic
     inline fun kexUnreachable(condition: Boolean) {}
 
     /**
-     * Checks if the call cite is unreachable with all the conditions being true
+     * Checks if the call cite is unreachable with the condition being true
      * @id -- string identifier to track the results of checking
      */
     @JvmStatic
