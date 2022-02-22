@@ -7,7 +7,7 @@ object AssertIntrinsics {
      * Assumes that all the conditions are true without checking them
      * */
     @JvmStatic
-    fun kexAssume(vararg conditions: Boolean) {}
+    fun kexAssume(condition: Boolean) {}
 
     /**
      * Assumes that the given object @param is not null
@@ -21,25 +21,25 @@ object AssertIntrinsics {
      * Checks if the call cite is reachable with all the conditions being true
      * */
     @JvmStatic
-    fun kexAssert(vararg conditions: Boolean) {}
+    fun kexAssert(condition: Boolean) {}
 
     /**
      * Checks if the call cite is reachable with all the conditions being true
      * @id -- string identifier to track the results of checking
      * */
     @JvmStatic
-    inline fun kexAssert(id: String, vararg conditions: Boolean) {}
+    inline fun kexAssert(id: String, condition: Boolean) {}
 
     /**
      * Checks if the call cite is unreachable with all the conditions being true
      */
     @JvmStatic
-    inline fun kexUnreachable(vararg conditions: Boolean) {}
+    inline fun kexUnreachable(condition: Boolean) {}
 
     /**
      * Checks if the call cite is unreachable with all the conditions being true
      * @id -- string identifier to track the results of checking
      */
     @JvmStatic
-    inline fun kexUnreachable(id: String, vararg conditions: Boolean) {}
+    inline fun kexUnreachable(id: String, condition: Boolean) {}
 }
