@@ -138,12 +138,12 @@ object CollectionIntrinsics {
 
     @JvmStatic
     fun containsFloat(src: FloatArray, element: Float): Boolean {
-        return element in src
+        return src.any { it == element }
     }
 
     @JvmStatic
     fun containsDouble(src: DoubleArray, element: Double): Boolean {
-        return element in src
+        return src.any { it == element }
     }
 
     @JvmStatic
