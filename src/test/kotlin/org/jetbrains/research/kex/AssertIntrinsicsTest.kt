@@ -1,7 +1,7 @@
-package org.jetbrains.research.kex
+package org.vorpal.research.kex
 
-import org.jetbrains.research.kex.intrinsics.AssertIntrinsics.kexAssert
-import org.jetbrains.research.kex.intrinsics.AssertIntrinsics.kexUnreachable
+import org.vorpal.research.kex.intrinsics.AssertIntrinsics.kexAssert
+import org.vorpal.research.kex.intrinsics.AssertIntrinsics.kexUnreachable
 import org.junit.Test
 
 class AssertIntrinsicsTest {

@@ -1,4 +1,4 @@
-package org.jetbrains.research.kex.intrinsics
+package org.vorpal.research.kex.intrinsics
 
 class UnknownTypeInstantiation() : Throwable()
 

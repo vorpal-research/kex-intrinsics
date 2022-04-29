@@ -32,7 +32,7 @@ Add the link to the repository to your `pom.xml`:
 Include:
 ```xml
 <dependency>
-	<groupId>org.jetbrains.research</groupId>
+	<groupId>org.vorpal.research</groupId>
 	<artifactId>kex-intrinsics</artifactId>
 	<version>${kex-intrinsics.version}</version>
 	<type>pom</type>
