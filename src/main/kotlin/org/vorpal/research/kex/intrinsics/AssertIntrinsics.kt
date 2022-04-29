@@ -1,6 +1,6 @@
 @file:Suppress("NOTHING_TO_INLINE", "UNUSED_PARAMETER")
 
-package org.jetbrains.research.kex.intrinsics
+package org.vorpal.research.kex.intrinsics
 
 object AssertIntrinsics {
     /**

@@ -1,6 +1,6 @@
-package org.jetbrains.research.kex.intrinsics
+package org.vorpal.research.kex.intrinsics
 
-import org.jetbrains.research.kex.intrinsics.internal.*
+import org.vorpal.research.kex.intrinsics.internal.*
 
 object CollectionIntrinsics {
     /**

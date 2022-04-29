@@ -1,4 +1,4 @@
-package org.jetbrains.research.kex.intrinsics.internal;
+package org.vorpal.research.kex.intrinsics.internal;
 
 @FunctionalInterface
 public interface IntGenerator {
