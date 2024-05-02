@@ -72,6 +72,21 @@ object AssertIntrinsics {
     @JvmStatic
     inline fun kexAssert(id: String, condition: Boolean) {}
 
+    /**
+     * Assumes that the given object @param is null
+     * */
+    @JvmStatic
+    fun <T> kexAssertNull(value: T?): T {
+        return value ?: throw NullPointerException()
+    }
+
+    /**
+     * Assumes that the given object @param is null
+     * */
+    @JvmStatic
+    fun <T> kexAssertNotNull(value: T?): T {
+        return value ?: throw NullPointerException()
+    }
 
     /**
      * Checks if the call cite is unreachable
